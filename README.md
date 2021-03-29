@@ -33,4 +33,4 @@ O objetivo é ser simples, porém ser desenvolvida da maneira correta.
 
 ## Etc
 
-Esta API foi desenvolvida com o único intuito de praticar e adquirir novos conhecimentos, e foi inspirada neste [repositório](https://github.com/rmanguinho/clean-ts-api)
+Esta API foi desenvolvida com o único intuito de praticar e adquirir novos conhecimentos, e foi inspirada neste [repositório](https://github.com/rmanguinho/clean-ts-api).
