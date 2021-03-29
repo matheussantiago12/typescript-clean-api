@@ -1,4 +1,4 @@
-import User from '@app/domain/entities/user'
+import { User } from '@app/domain/entities/user'
 
 type CreateUserParams = Omit<User, 'id'>
 
