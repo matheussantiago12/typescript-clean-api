@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.ts",
-    "test-db-connection": "npx ts-node app/infra/database/mysql/sequelize/setup/index.ts"
+    "test-db-connection": "npx ts-node app/infra/database/mysql/sequelize/setup/test-connection.ts"
   },
   "keywords": [],
   "author": "",
