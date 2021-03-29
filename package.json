@@ -5,8 +5,8 @@
   "main": "./index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.ts",
-    "test-db-connection": "npx ts-node app/infra/database/mysql/sequelize/setup/test-connection.ts"
+    "dev": "npx ts-node-dev -r tsconfig-paths/register index.ts",
+    "test-db-connection": "npx ts-node -r tsconfig-paths/register app/infra/database/mysql/sequelize/setup/test-connection.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "module-alias": "^2.2.2",
     "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.6.2",
@@ -32,6 +33,11 @@
     "eslint-plugin-promise": "^4.3.1",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.3"
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0",
+    "tscpaths": "^0.0.9",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.2.3",
+    "typescript-transform-paths": "^2.2.3"
   }
 }

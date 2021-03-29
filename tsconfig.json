@@ -1,18 +1,15 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@app/*": ["./app/*"]
+        },
         "target": "es6",
         "module": "CommonJS",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "rootDir": "./",
         "outDir": "./build",
         "esModuleInterop": true,
-        "strict": true,
-        "baseUrl": "./app",
-        "paths": {
-            "App/*": [
-                "./*"
-            ],
-        }
+        "strict": true
     }
 }
