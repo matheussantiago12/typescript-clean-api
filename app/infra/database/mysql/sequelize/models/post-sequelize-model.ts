@@ -29,6 +29,6 @@ PostModel.init({
     sequelize
 })
 
-PostModel.belongsTo(UserModel, { foreignKey: 'user_id', foreignKeyConstraint: true })
+PostModel.belongsTo(UserModel, { foreignKey: 'user_id', as: 'user' })
 
 export default PostModel
