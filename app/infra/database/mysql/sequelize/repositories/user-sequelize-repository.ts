@@ -1,11 +1,11 @@
 import { CreateUserRepository, CreateUserParams } from '@app/data/protocols/database/user/create-user-repository'
-import User from '@app/infra/database/mysql/sequelize/models/user-sequelize-model'
-import UserEntity from '@app/domain/entities/user'
+import UserModel from '@app/infra/database/mysql/sequelize/models/user-sequelize-model'
+import { User } from '@app/domain/entities/user'
 
-class UserSequelizeRepository implements CreateUserRepository {
-    async create (data: CreateUserParams): Promise<UserEntity> {
+export class UserSequelizeRepository implements CreateUserRepository {
+    async create (data: CreateUserParams): Promise<User> {
         try {
-            const response = await User.create(data)
+            const response = await UserModel.create(data)
 
             const user = {
                 id: response.getDataValue('id'),
@@ -21,5 +21,3 @@ class UserSequelizeRepository implements CreateUserRepository {
         }
     }
 }
-
-export default { UserSequelizeRepository }

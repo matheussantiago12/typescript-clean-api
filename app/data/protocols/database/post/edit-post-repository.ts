@@ -1,4 +1,4 @@
-import Post from '@app/domain/entities/post'
+import { Post } from '@app/domain/entities/post'
 import { EditPostParams } from '@app/domain/usecases/post/edit-post'
 
 interface EditPostRepository {

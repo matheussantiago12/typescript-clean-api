@@ -1,4 +1,4 @@
-import User from '@app/domain/entities/user'
+import { User } from '@app/domain/entities/user'
 import { sequelize } from '@app/infra/database/mysql/sequelize/setup'
 import { DataTypes, Optional } from 'sequelize'
 import { Table, Model } from 'sequelize-typescript'

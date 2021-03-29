@@ -1,4 +1,4 @@
-import Post from '@app/domain/entities/post'
+import { Post } from '@app/domain/entities/post'
 import { CreatePostParams } from '@app/domain/usecases/post/create-post'
 
 interface CreatePostRepository {

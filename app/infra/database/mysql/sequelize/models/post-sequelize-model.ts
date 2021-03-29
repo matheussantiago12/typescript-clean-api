@@ -1,4 +1,4 @@
-import Post from '@app/domain/entities/post'
+import { Post } from '@app/domain/entities/post'
 import { sequelize } from '@app/infra/database/mysql/sequelize/setup'
 import { DataTypes, Optional } from 'sequelize'
 import { Table, Model } from 'sequelize-typescript'
