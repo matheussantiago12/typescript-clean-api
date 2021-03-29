@@ -1,4 +1,4 @@
-import { sequelize } from './index'
+import { sequelize } from '@app/infra/database/mysql/sequelize/setup'
 
 const testConnection = async () => {
     try {

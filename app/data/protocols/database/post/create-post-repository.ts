@@ -1,5 +1,5 @@
-import Post from 'App/domain/entities/post'
-import { CreatePostParams } from 'App/domain/usecases/post/create-post'
+import Post from '@app/domain/entities/post'
+import { CreatePostParams } from '@app/domain/usecases/post/create-post'
 
 interface CreatePostRepository {
     create: (data: CreatePostParams) => Promise<Post>

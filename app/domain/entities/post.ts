@@ -1,4 +1,4 @@
-import User from 'App/domain/entities/user'
+import User from '@app/domain/entities/user'
 
 interface Post {
     id: number

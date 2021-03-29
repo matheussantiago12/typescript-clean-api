@@ -1,4 +1,4 @@
-import { HttpResponse } from '../protocols/http'
+import { HttpResponse } from '@app/presentation/protocols/http'
 
 export const ok = (data: any): HttpResponse => ({
     body: data,

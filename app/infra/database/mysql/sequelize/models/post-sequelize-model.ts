@@ -1,8 +1,8 @@
-import Post from '../../../../../domain/entities/post'
-import { sequelize } from '../setup'
+import Post from '@app/domain/entities/post'
+import { sequelize } from '@app/infra/database/mysql/sequelize/setup'
 import { DataTypes, Optional } from 'sequelize'
 import { Table, Model } from 'sequelize-typescript'
-import UserModel from './user-sequelize-model'
+import UserModel from '@app/infra/database/mysql/sequelize/models/user-sequelize-model'
 
 interface PostCreationAttributes extends Optional<Post, 'id'> {}
 
@@ -30,14 +30,5 @@ PostModel.init({
 })
 
 PostModel.belongsTo(UserModel, { foreignKey: 'user_id', foreignKeyConstraint: true })
-
-// export const getPost = async () => {
-//     try {
-//         const post = await PostModel.findByPk(1)
-//         console.log(post?.getDataValue('title'))
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
 
 export default PostModel

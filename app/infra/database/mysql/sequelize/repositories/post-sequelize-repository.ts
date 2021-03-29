@@ -1,7 +1,7 @@
-import Post from '../models/post-sequelize-model'
-import PostEntity from '../../../../../domain/entities/post'
-import { CreatePostRepository, CreatePostParams } from '../../../../../data/protocols/database/post/create-post-repository'
-import { EditPostRepository, EditPostParams } from '../../../../../data/protocols/database/post/edit-post-repository'
+import Post from '@app/infra/database/mysql/sequelize/models/post-sequelize-model'
+import PostEntity from '@app/domain/entities/post'
+import { CreatePostRepository, CreatePostParams } from '@app/data/protocols/database/post/create-post-repository'
+import { EditPostRepository, EditPostParams } from '@app/data/protocols/database/post/edit-post-repository'
 
 class PostSequelizeRepository implements CreatePostRepository, EditPostRepository {
     async create (data: CreatePostParams): Promise<PostEntity> {

@@ -1,4 +1,4 @@
-import Post from 'App/domain/entities/post'
+import Post from '@app/domain/entities/post'
 
 type CreatePostParams = Omit<Post, 'id'>
 

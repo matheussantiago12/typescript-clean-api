@@ -1,6 +1,7 @@
-import { CreateUserRepository, CreateUserParams } from '../../../../../data/protocols/database/user/create-user-repository'
-import User from '../models/user-sequelize-model'
-import UserEntity from '../../../../../domain/entities/user'
+import { CreateUserRepository, CreateUserParams } from '@app/data/protocols/database/user/create-user-repository'
+import User from '@app/infra/database/mysql/sequelize/models/user-sequelize-model'
+import UserEntity from '@app/domain/entities/user'
+
 class UserSequelizeRepository implements CreateUserRepository {
     async create (data: CreateUserParams): Promise<UserEntity> {
         try {
