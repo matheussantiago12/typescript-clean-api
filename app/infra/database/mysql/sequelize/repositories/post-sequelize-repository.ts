@@ -45,4 +45,4 @@ class PostSequelizeRepository implements CreatePostRepository, EditPostRepositor
     }
 }
 
-export default PostSequelizeRepository
+export default { PostSequelizeRepository }

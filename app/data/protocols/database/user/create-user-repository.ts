@@ -5,4 +5,4 @@ interface CreateUserRepository {
     create: (data: CreateUserParams) => Promise<User>
 }
 
-export { CreateUserRepository }
+export { CreateUserRepository, CreateUserParams }
