@@ -5,7 +5,7 @@
 Esta é uma API desenvolvida com a utilização de clean architecture e princípios SOLID.
 O objetivo é ser simples, porém ser desenvolvida da maneira correta.
 
-### Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Node
 - Typescript
@@ -13,7 +13,7 @@ O objetivo é ser simples, porém ser desenvolvida da maneira correta.
 - Sequelize
 - ESLint (Standard Javascript Style)
 
-### Rotas
+## Rotas
 
 **POST** - `/users`
 *Cria um novo usuário:*
@@ -31,6 +31,6 @@ O objetivo é ser simples, porém ser desenvolvida da maneira correta.
   "user_id": number
 }`
 
-### Etc
+## Etc
 
 Esta API foi desenvolvida com o único intuito de praticar e adquirir novos conhecimentos, e foi inspirada neste [repositório](https://github.com/rmanguinho/clean-ts-api)
