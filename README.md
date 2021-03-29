@@ -16,7 +16,7 @@ O objetivo é ser simples, porém ser desenvolvida da maneira correta.
 ### Rotas
 
 **POST** - `/users`
-*Cria um novo usuário.*
+*Cria um novo usuário:*
 `{
   "name": string,
   "email": string,
@@ -24,9 +24,13 @@ O objetivo é ser simples, porém ser desenvolvida da maneira correta.
 }`
 
 **POST** - `/posts`
-*Cria um novo post.*
+*Cria um novo post:*
 `{
   "title": string,
   "content": string,
   "user_id": number
 }`
+
+### Etc
+
+Esta API foi desenvolvida com o único intuito de praticar e adquirir novos conhecimentos, e foi inspirada neste [repositório](https://github.com/rmanguinho/clean-ts-api)
