@@ -13,7 +13,7 @@ export const routeAdapter = (controller: Controller) => {
 
             return res.status(response.statusCode).json(response.body)
         } catch (error) {
-            return res.status(500).send('Unexpected error')
+            return res.status(500).json({ error: 'Unexpected error' })
         }
     }
 }
