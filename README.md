@@ -13,6 +13,16 @@ O objetivo é ser simples, porém feita da maneira correta.
 - Sequelize
 - ESLint (Standard Javascript Style)
 
+## Setup
+
+**Requisitos**: node, npm e docker-compose
+
+Dentro da pasta do projeto precisamos usar os seguintes comandos:
+
+`$ docker-compose up` - Cria o banco de dados
+`$ npm install` - Instala as dependências do projeto
+`$ npm run dev` - Inicia o projeto
+
 ## Rotas
 
 **POST** - `/users`
