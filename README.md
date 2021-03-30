@@ -28,7 +28,7 @@ O objetivo é ser simples, porém feita da maneira correta.
 `{
   "title": string,
   "content": string,
-  "user_id": number
+  "user_id": int
 }`
 
 ## Etc
