@@ -3,7 +3,5 @@ import { CreatePostController } from '@app/presentation/controllers/post/create-
 import { makeCreatePost } from '@app/main/factories/usecases/create-post-factory'
 
 export const makeCreatePostController = (): Controller => {
-    const controller = new CreatePostController(makeCreatePost())
-
-    return controller
+    return new CreatePostController(makeCreatePost())
 }
