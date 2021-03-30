@@ -5,9 +5,7 @@ import { CreatePostRepository, CreatePostParams } from '@app/data/protocols/data
 export class PostSequelizeRepository implements CreatePostRepository {
     async create (data: CreatePostParams): Promise<Post> {
         try {
-            const response = await PostModel.create(data, {
-                include: { association: 'user' }
-            })
+            const response = await PostModel.create(data)
 
             const post = {
                 id: response.getDataValue('id'),
