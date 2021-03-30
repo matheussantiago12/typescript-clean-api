@@ -12,6 +12,7 @@ O objetivo é ser simples, porém feita da maneira correta.
 - Express
 - Sequelize
 - ESLint (Standard Javascript Style)
+- Docker
 
 ## Setup
 
