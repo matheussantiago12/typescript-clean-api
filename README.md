@@ -3,7 +3,7 @@
 ## Introdução
 
 Esta é uma API desenvolvida com a utilização de clean architecture e princípios SOLID.
-O objetivo é ser simples, porém ser desenvolvida da maneira correta.
+O objetivo é ser simples, porém feita da maneira correta.
 
 ## Tecnologias utilizadas
 
