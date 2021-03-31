@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx ts-node-dev -r tsconfig-paths/register index.ts",
-    "test-db-connection": "npx ts-node -r tsconfig-paths/register app/infra/database/mysql/sequelize/setup/test-connection.ts",
-    "migration:run": "npx ts-node -r tsconfig-paths/register app/infra/database/mysql/sequelize/migrations/run-migrations.ts"
+    "test-connection": "npx ts-node -r tsconfig-paths/register app/infra/database/mysql/sequelize/setup/test-connection.ts",
+    "migrate": "knex migrate:latest"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "knex": "^0.95.4",
     "module-alias": "^2.2.2",
     "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
