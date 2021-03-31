@@ -1,4 +1,3 @@
-import { table } from 'console'
 import { Knex } from 'knex'
 
 const tableName = 'post'
