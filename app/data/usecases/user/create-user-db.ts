@@ -8,13 +8,8 @@ export class CreateUserDb implements CreateUser {
     ) {}
 
     async create (data: CreateUserParams): Promise<User> {
-        try {
-            const user = await this.createUserRepository.create(data)
+        const user = await this.createUserRepository.create(data)
 
-            return user
-        } catch (error) {
-            console.log(error)
-            throw error
-        }
+        return user
     }
 }

@@ -8,13 +8,8 @@ export class CreatePostDb implements CreatePost {
     ) {}
 
     async create (data: CreatePostParams): Promise<Post> {
-        try {
-            const post = await this.createPostRepository.create(data)
+        const post = await this.createPostRepository.create(data)
 
-            return post
-        } catch (error) {
-            console.log(error)
-            throw error
-        }
+        return post
     }
 }
