@@ -11,6 +11,7 @@ O objetivo é ser simples, porém feita da maneira correta.
 - Typescript
 - Express
 - Sequelize
+- Knex.js
 - ESLint (Standard Javascript Style)
 - Docker
 
@@ -20,8 +21,10 @@ O objetivo é ser simples, porém feita da maneira correta.
 
 Dentro da pasta do projeto precisamos usar os seguintes comandos:
 
-`$ docker-compose up` - Cria o banco de dados  
+`$ docker-compose up` - Inicia o banco de dados  
 `$ npm install` - Instala as dependências do projeto  
+`$ npm run test-connection` - Verifica se a conexão com o bando de dados funcionou  
+`$ npm run migrate` - Realiza as migrations (cria as tabelas no banco)  
 `$ npm run dev` - Inicia o projeto  
 
 ## Rotas
