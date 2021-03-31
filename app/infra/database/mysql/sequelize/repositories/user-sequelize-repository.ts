@@ -4,20 +4,15 @@ import { User } from '@app/domain/entities/user'
 
 export class UserSequelizeRepository implements CreateUserRepository {
     async create (data: CreateUserParams): Promise<User> {
-        try {
-            const response = await UserModel.create(data)
+        const response = await UserModel.create(data)
 
-            const user = {
-                id: response.getDataValue('id'),
-                name: response.getDataValue('name'),
-                email: response.getDataValue('email'),
-                password: response.getDataValue('password')
-            }
-
-            return user
-        } catch (error) {
-            console.log(error)
-            throw error
+        const user = {
+            id: response.getDataValue('id'),
+            name: response.getDataValue('name'),
+            email: response.getDataValue('email'),
+            password: response.getDataValue('password')
         }
+
+        return user
     }
 }
