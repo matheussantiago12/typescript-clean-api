@@ -2,7 +2,8 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@app/*": ["./app/*"]
+            "@app/*": ["./app/*"],
+            "@/*": ["./*"]
         },
         "target": "es6",
         "module": "CommonJS",
@@ -10,6 +11,7 @@
         "emitDecoratorMetadata": true,
         "outDir": "./build",
         "esModuleInterop": true,
-        "strict": true
+        "strict": true,
+        "resolveJsonModule": true
     }
 }

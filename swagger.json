@@ -1,0 +1,128 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0", 
+        "title": "TypeScript Clean API",
+        "description": "Clean API desenvolvida com typescript",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:8000",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Users",
+            "description": "API for users in the system"
+        }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Criar novo usuário",
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "body",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/User"
+                        } 
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "/posts": {
+            "post": {
+                "tags": [
+                    "Posts"
+                ],
+                "summary": "Criar novo post",
+                "parameters": [
+                    {
+                        "name": "post",
+                        "in": "body",
+                        "schema": {
+                            "$ref": "#/definitions/Post"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/Post"
+                        } 
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "User": {
+            "required": [
+                "name",
+                "email",
+                "password"
+            ],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "unique": true
+                },
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string",
+                    "unique": true
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "Post": {
+            "required": [
+                "title",
+                "content",
+                "user_id"
+            ],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "unique": true
+                },
+                "title": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                },
+                "user_id": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
