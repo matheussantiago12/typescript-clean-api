@@ -47,7 +47,7 @@ Dentro da pasta do projeto podemos usar os seguintes comandos:
   "user_id": int
 }`
 
-**SWAGGER** - `/api-docs`
+Visualizar a documentação pelo Swagger - `/api-docs`
 
 ## Etc
 
