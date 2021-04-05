@@ -13,6 +13,7 @@ O objetivo é ser simples, porém feita da maneira correta.
 - Sequelize
 - Knex.js
 - ESLint (Standard Javascript Style)
+- Jest
 - Docker
 
 ## Setup
