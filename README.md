@@ -19,13 +19,14 @@ O objetivo é ser simples, porém feita da maneira correta.
 
 **Requisitos**: node, npm e docker-compose
 
-Dentro da pasta do projeto precisamos usar os seguintes comandos:
+Dentro da pasta do projeto podemos usar os seguintes comandos:
 
 `$ docker-compose up` - Inicia o banco de dados  
 `$ npm install` - Instala as dependências do projeto  
 `$ npm run test-connection` - Verifica se a conexão com o bando de dados funcionou  
 `$ npm run migrate` - Realiza as migrations (cria as tabelas no banco)  
 `$ npm run dev` - Inicia o projeto  
+`$ npm teste` - Roda todos os testes
 
 ## Rotas
 
