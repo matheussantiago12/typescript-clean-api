@@ -47,6 +47,8 @@ Dentro da pasta do projeto podemos usar os seguintes comandos:
   "user_id": int
 }`
 
+**SWAGGER** - `/api-docs`
+
 ## Etc
 
 Esta API foi desenvolvida com o único intuito de praticar e adquirir novos conhecimentos, e foi inspirada neste [repositório](https://github.com/rmanguinho/clean-ts-api).
