@@ -9,13 +9,8 @@ export class CreateUserController implements Controller {
     ) {}
 
     async handle (request: CreateUserParams): Promise<HttpResponse> {
-        try {
-            const data = await this.createUser.create(request)
+        const data = await this.createUser.create(request)
 
-            return created(data)
-        } catch (error) {
-            console.log(error)
-            throw error
-        }
+        return created(data)
     }
 }

@@ -9,13 +9,8 @@ export class CreatePostController implements Controller {
     ) {}
 
     async handle (request: CreatePostParams): Promise<HttpResponse> {
-        try {
-            const data = await this.createPost.create(request)
+        const data = await this.createPost.create(request)
 
-            return created(data)
-        } catch (error) {
-            console.log(error)
-            throw error
-        }
+        return created(data)
     }
 }
