@@ -26,7 +26,7 @@ Dentro da pasta do projeto podemos usar os seguintes comandos:
 `$ npm run test-connection` - Verifica se a conexão com o bando de dados funcionou  
 `$ npm run migrate` - Realiza as migrations (cria as tabelas no banco)  
 `$ npm run dev` - Inicia o projeto  
-`$ npm teste` - Roda todos os testes
+`$ npm test` - Roda todos os testes
 
 ## Rotas
 
