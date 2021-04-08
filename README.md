@@ -1,4 +1,6 @@
-# Typescript Clean API
+# Typescript Clean API  
+[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen)](http://standardjs.com/)
+[![js-standard-style](https://img.shields.io/badge/license-MIT-green)]()
 
 ## Introdução
 
